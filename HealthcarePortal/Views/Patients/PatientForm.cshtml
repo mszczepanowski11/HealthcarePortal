@@ -1,0 +1,89 @@
+﻿@model HealthcarePortal.Core.Models.Patient
+
+<form method="post" asp-action="Create">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="form-group row">
+
+               
+
+                <h2 class="text-black-50 pl-3">Add patient</h2>
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label col-md-3 col-sm-3 col-xs-12">Name</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label col-md-3 col-sm-3 col-xs-12">Address</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input asp-for="Address" class="form-control" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BirthDate" class="control-label col-md-3 col-sm-3 col-xs-12">Birth Date</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input asp-for="BirthDate" class="form-control" />
+                        <span asp-validation-for="BirthDate" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Phone" class="control-label col-md-3 col-sm-3 col-xs-12">Phone</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input asp-for="Phone" class="form-control" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Height" class="control-label col-md-3 col-sm-3 col-xs-12">Height</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input asp-for="Height" class="form-control" />
+                        <span asp-validation-for="Height" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Weight" class="control-label col-md-3 col-sm-3 col-xs-12">Weight</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input asp-for="Weight" class="form-control" />
+                        <span asp-validation-for="Weight" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Token" class="control-label col-md-3 col-sm-3 col-xs-12">Token</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input asp-for="Token" class="form-control" />
+                        <span asp-validation-for="Token" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <br>
+                    <div class="col">
+                        <input type="submit" class="btn btn-success" value="Create" />
+                    </div>
+                    <br>
+                    <div class="col">
+                        <a class="btn btn-danger" asp-action="Index">Back</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+     @{
+         <partial name="_ValidationScriptsPartial"/>
+     }
+}

@@ -1,0 +1,84 @@
+﻿@model HealthcarePortal.Core.Models.Patient
+    
+@{
+    ViewBag.Title = "EditForm";
+   
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken();
+
+<div class="form-horizontal">
+    <h4>Patient</h4>
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(patient => patient.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(patient => patient.Name, "", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(patient => patient.Name, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(patient => patient.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(patient => patient.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(patient => patient.Address, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(patient => patient.Address, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(patient => patient.BirthDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(patient => patient.BirthDate, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(patient => patient.BirthDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(patient => patient.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(patient => patient.Phone, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(patient => patient.Phone, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(patient => patient.Height, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(patient => patient.Height, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(patient => patient.Height, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(patient => patient.Weight, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(patient => patient.Weight, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(patient => patient.Weight, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(patient => patient.Token, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(patient => patient.Token, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(patient => patient.Token, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" asp-action="Update" value="Save" class="btn btn-primary" />
+        </div>
+    </div>
+
+</div>
+    }
+
+<div>
+    @Html.ActionLink("Back to list","Index")
+</div>

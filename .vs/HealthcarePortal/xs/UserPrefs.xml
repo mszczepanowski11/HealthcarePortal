@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{7BE9D4BD-FA94-4D10-BD1C-B671E0F4EBDA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HealthcarePortal/Controllers/AccountController.cs">
+    <Files>
+      <File FileName="HealthcarePortal/Core/Models/ErrorViewModel.cs" Line="10" Column="1" />
+      <File FileName="HealthcarePortal/Core/Models/Patient.cs" Line="13" Column="19" />
+      <File FileName="HealthcarePortal/Program.cs" Line="51" Column="24" />
+      <File FileName="HealthcarePortal/Data/AppIdentityDbContext.cs" Line="14" Column="1" />
+      <File FileName="HealthcarePortal/Controllers/AccountController.cs" Line="29" Column="39" />
+      <File FileName="HealthcarePortal/Core/Models/LoginModel.cs" Line="17" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HealthcarePortal" expanded="True">
+            <Node name="HealthcarePortal" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="AccountController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.HealthcarePortal PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
