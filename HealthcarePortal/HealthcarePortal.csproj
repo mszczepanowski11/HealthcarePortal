@@ -23,6 +23,7 @@
     <None Remove="Data\" />
     <None Remove="Core\Repositories\" />
     <None Remove="Data\EFRepositories\" />
+    <None Remove="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.0" />
@@ -52,5 +53,9 @@
     <Folder Include="Data\" />
     <Folder Include="Core\Repositories\" />
     <Folder Include="Data\EFRepositories\" />
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" />
   </ItemGroup>
 </Project>

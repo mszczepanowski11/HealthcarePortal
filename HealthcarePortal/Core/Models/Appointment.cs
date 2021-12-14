@@ -11,11 +11,11 @@ namespace HealthcarePortal.Core.Models
         public bool Status { get; set; }
         public Patient Patient { get; set;}
 
-        public ICollection<Patient> Patients { get; set; }
+      
 
         public Appointment()
         {
-            Patients = new Collection<Patient>();
+            
         }
     }
 }

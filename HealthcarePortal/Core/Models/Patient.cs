@@ -27,11 +27,11 @@ namespace HealthcarePortal.Core.Models
         public string Weight { get; set; }
 
 
-        public ICollection<Appointment> Appointments { get; set; }
+       
 
         public Patient()
         {
-            Appointments = new Collection<Appointment>();
+            
         }
     }
 }
